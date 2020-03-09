@@ -8,22 +8,30 @@ namespace WordSearch
 {
     public class GameManager : MonoBehaviour
     {
-        public List<string> Question = new List<string>();
-        public List<TMP_InputField> Answers = new List<TMP_InputField>();
+        public List<answeredQuestion> Question = new List<answeredQuestion>();
 
         public void CheckAnswer()
         {
             var Count = Question.Count;
             var Correct = 0;
-            for (int i = 0; i < Question.Count; i++)
+            foreach (var question in Question)
             {
-                if (Question[i] == Answers[i].text)
+                for (int i = 0; i < question.letter.Count; i++)
                 {
-                    Correct += 1;
+                    if (question.letter[i] == question.Answers[i].text)
+                    {
+                        Correct += 1;
+                    }
+                    if (Correct == Count) print(question.letter[i] + "Correct");
                 }
-                if (Correct == Count) print(Answers[i].text + "Correct");
             }
         }
 
+    }
+    [System.Serializable]
+    public class answeredQuestion
+    {
+        public List<string> letter = new List<string>();
+        public List<TMP_InputField> Answers = new List<TMP_InputField>();
     }
 }

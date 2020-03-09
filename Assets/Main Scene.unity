@@ -536,11 +536,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Question:
-  - 
-  - 
+  - t
+  - e
+  - a
   Answers:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1803886182}
+  - {fileID: 2005818701}
   - {fileID: 2045850660}
 --- !u!4 &1095507051
 Transform:
@@ -676,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 2705153857270333089, guid: 627cfa3f15aba924c80aa51fb060158f,
         type: 3}
       propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2705153857270333089, guid: 627cfa3f15aba924c80aa51fb060158f,
         type: 3}
@@ -936,6 +937,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1740375435}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1803886182 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2705153857270333089, guid: 627cfa3f15aba924c80aa51fb060158f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1740375435}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1988889154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,6 +1166,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &2005818701 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2705153857270333089, guid: 627cfa3f15aba924c80aa51fb060158f,
+    type: 3}
+  m_PrefabInstance: {fileID: 983483664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2045850660 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2705153857270333089, guid: 627cfa3f15aba924c80aa51fb060158f,

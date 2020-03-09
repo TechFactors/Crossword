@@ -10,13 +10,7 @@ namespace WordSearch
     {
         public List<string> Question = new List<string>();
         public List<TMP_InputField> Answers = new List<TMP_InputField>();
-        void Start()
-        {
-            foreach (var item in Answers)
-            {
-                print(item.text);
-            }
-        }
+
         public void CheckAnswer()
         {
             for (int i = 0; i < Question.Count; i++)

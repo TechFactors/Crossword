@@ -9,7 +9,7 @@ namespace WordSearch
     public class GameManager : MonoBehaviour
     {
         public List<string> Question = new List<string>();
-        public List<TextMeshProUGUI> Answers = new List<TextMeshProUGUI>();
+        public List<TMP_InputField> Answers = new List<TMP_InputField>();
         void Start()
         {
             foreach (var item in Answers)
@@ -19,10 +19,14 @@ namespace WordSearch
         }
         public void CheckAnswer()
         {
-            foreach (var item in Answers)
+            for (int i = 0; i < Question.Count; i++)
             {
-                print(item.text);
+                if (Question[i] == Answers[i].text)
+                {
+                    print(Answers[i].text + "Correct");
+                }
             }
         }
+
     }
 }

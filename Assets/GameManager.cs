@@ -13,12 +13,15 @@ namespace WordSearch
 
         public void CheckAnswer()
         {
+            var Count = Question.Count;
+            var Correct = 0;
             for (int i = 0; i < Question.Count; i++)
             {
                 if (Question[i] == Answers[i].text)
                 {
-                    print(Answers[i].text + "Correct");
+                    Correct += 1;
                 }
+                if (Correct == Count) print(Answers[i].text + "Correct");
             }
         }
 
